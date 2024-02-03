@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PeriodTrackerActivity">
+    <!-- Progress Bar for indicating cycle length -->
+
+    <!-- Text View for displaying cycle length -->
+
+    <!-- Calendar View for indicating period dates -->
+
+    <ProgressBar
+        android:id="@+id/progressBarCycleLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:max="28"
+        android:progress="14" />
+
+    <TextView
+        android:id="@+id/textViewCycleLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarCycleLength"
+        android:layout_marginTop="154dp"
+        android:text="Cycle Length: 14 days"
+        android:textSize="16sp" />
+
+    <CalendarView
+        android:id="@+id/calendarViewPeriodDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCycleLength"
+        android:layout_marginTop="48dp" />
+
+</RelativeLayout>
